@@ -55,7 +55,7 @@ export function Hero() {
             >
               <div className="relative w-full sm:w-auto">
                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground font-medium">
-                  helloitsmyid.com/
+                  helloits.my.id/
                 </span>
                 <input
                   type="text"
