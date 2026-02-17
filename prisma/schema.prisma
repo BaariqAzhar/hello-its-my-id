@@ -10,6 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  schemas  = ["hello_its_my_id"]
 }
 
 model User {
@@ -21,6 +22,7 @@ model User {
   pages Page[]
 
   @@map("users")
+  @@schema("hello_its_my_id")
 }
 
 model Page {
@@ -36,6 +38,7 @@ model Page {
   links Link[]
 
   @@map("pages")
+  @@schema("hello_its_my_id")
 }
 
 model Link {
@@ -50,4 +53,5 @@ model Link {
   page Page @relation(fields: [pageId], references: [id], onDelete: Cascade)
 
   @@map("links")
+  @@schema("hello_its_my_id")
 }
